@@ -480,4 +480,4 @@ var e;!function(){"use strict";var r={}.hasOwnProperty;function n(){for(var e=[]
 },{"algoliasearch":"kpCD","instantsearch.js":"0SiV","instantsearch.js/es/widgets":"3VTb","../custom-widgets/c-autocomplete":"+wue","../templates/result-hit":"6TWg"}],"vZyd":[function(require,module,exports) {
 "use strict";var e=n(require("./components/unified-search"));function n(e){return e&&e.__esModule?e:{default:e}}function t(e,n){if(!(e instanceof n))throw new TypeError("Cannot call a class as a function")}function r(e,n){for(var t=0;t<n.length;t++){var r=n[t];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}function i(e,n,t){return n&&r(e.prototype,n),t&&r(e,t),e}var a=function(){function n(){t(this,n),this._initSearch()}return i(n,[{key:"_initSearch",value:function(){this.unifiedSearch=new e.default}}]),n}(),u=new a;
 },{"./components/unified-search":"uaQ2"}]},{},["vZyd"], null)
-//# sourceMappingURL=docs/app.72536e5c.js.map
+//# sourceMappingURL=app.72536e5c.js.map
