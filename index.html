@@ -8,7 +8,8 @@
 
   <link rel="shortcut icon" href="./favicon.png">
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7/themes/algolia-min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.1.0/themes/algolia.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/selectize@0.12.6/dist/css/selectize.css">
   <link rel="stylesheet" href="./src/index.css">
   <link rel="stylesheet" href="./src/app.css">
 
@@ -22,13 +23,13 @@
         <img class="header__logo" src="src/Assets/logo.svg">
       </div>
       <div class="header__searchbox-container">
-        <div class="header__searchbox" id="searchbox"></div>
-        <div class="autocomplete">
-          <div class="autocomplete_container">
-            <div class="autocomplete__hits" id="autocomplete-hits">
-            </div>
-          </div>
-        </div>
+        <div class="header__searchbox" id="autocomplete"></div>
+        
+      <!-- <div class="autocomplete" id="autocomplete"> -->
+          <!-- <div class="autocomplete_container">
+            <div class="autocomplete__hits" id="autocomplete-hits"></div>
+          </div> -->
+        <!-- </div> -->
       </div>
     </div>
   </header>
@@ -36,6 +37,7 @@
   <div class="results">
     <div class="results__container">
       <div class="facet-panel">
+        <div id="clear-refinements"></div>
         <div class="facet-panel__container">
           <h2>Brand</h2>
           <div class="facet-panel__facet-list" id="brand-facet"></div>
@@ -44,16 +46,28 @@
           <h2>Categories</h2>
           <div class="facet-panel__facet-list" id="categories-facet"></div>
         </div>
+        <div class="price-container">
+          <h2>Price</h2>
+          <div id="numeric-menu"></div>
+        </div>
+        <div class="rating-menu-container">
+          <h2>Ratings</h2>
+          <div id="rating-menu"></div>
+        </div>
       </div>
       <div class="search-panel">
         <div class="search-panel__results">
-          <div id="hits"></div>
+          <div id="product-hits"></div>
         </div>
         <div id="pagination"></div>
       </div>
     </div>
   </div>
 
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/selectize@0.12.6/dist/js/standalone/selectize.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js"></script>
   <script src="./src/app.js"></script>
 </body>
 

@@ -1,4 +1,4 @@
-# Algolia Solution Architecture Assignment
+COnfgu# Algolia Solution Architecture Assignment
 
 This is the hiring assignment for the SA Team at Algolia. It’s intended to mimic work you might do here, while giving us an understanding of your skills in:
 

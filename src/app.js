@@ -1,28 +1,18 @@
-import ResultsPage from './components/results-page';
-import Autocomplete from './components/autocomplete';
+import UnifiedSearch from './components/unified-search';
+
+if (process.env.NODE_ENV !== 'production') {
+  console.log('Using dotenv to set environment variables.')
+  require('dotenv').config()
+}
 
 class SpencerAndWilliamsSearch {
   constructor() {
     this._initSearch();
-    this._registerEvents();
   }
 
   _initSearch() {
-    this.autocompleteDropdown = new Autocomplete();
-    this.resultPage = new ResultsPage();
-  }
-
-  _registerEvents() {
-    const autocomplete = document.querySelector('.autocomplete');
-    const searchbox = document.querySelector('#searchbox input');
-
-    searchbox.addEventListener('click', () => {
-      autocomplete.style.display = 'block';
-    });
-
-    searchbox.addEventListener('blur', () => {
-      autocomplete.style.display = 'none';
-    });
+    this.unifiedSearch = new UnifiedSearch();
+    
   }
 }
 

@@ -2,6 +2,25 @@
   box-sizing: border-box;
 }
 
+h1 {
+  margin-bottom: 1rem;
+}
+
+em {
+  background: cyan;
+  font-style: normal;
+}
+
+.header__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.hit {
+  padding: 5px 8px 5px 16px;
+}
+
 /* Instant Search */
 .ais-Hits-list {
   display: flex;
@@ -64,6 +83,10 @@
 }
 
 /* Autocomplete */
+.optgroup-header {
+  font-weight: 800;
+}
+
 .autocomplete {
   display: none;
   background-color: #fff;
@@ -110,7 +133,7 @@
 .results {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 120px 1rem 0;
+  padding: 140px 1rem 0;
 }
 
 .results__container {
