@@ -11,6 +11,7 @@ const autoComplete = connectAutocomplete(
   ({ indices, refine, widgetParams }, isFirstRendering) => {
     const { initialIndices, container, onSelectChange } = widgetParams;
 
+    // set up initial render configurations
     if (isFirstRendering) {
 
     	// for some reason indices is undefined on firstRender so I'm spooding the indices manually
@@ -70,10 +71,11 @@ const autoComplete = connectAutocomplete(
 
     const [select] = container.find('select');
 
+    // add the correct properties to the results hits so different 'types' of 
+    // results can be shown in one dropdown without autocomplete.js
     select.selectize.clearOptions();
     indices.forEach(index => {
     	if (index.results) {
-    		console.log("INDEX", index)
     		index.hitType = getHitType(index); 
     		select.selectize.addOptionGroup(index.hitType, index);
         index.results.hits.forEach(hit => 

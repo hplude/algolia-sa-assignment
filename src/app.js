@@ -1,9 +1,9 @@
 import UnifiedSearch from './components/unified-search';
 
-if (process.env.NODE_ENV !== 'production') {
-  console.log('Using dotenv to set environment variables.')
-  require('dotenv').config()
-}
+// if (process.env.NODE_ENV !== 'production') {
+//   console.log('Using dotenv to set environment variables.')
+//   require('dotenv').config()
+// }
 
 class SpencerAndWilliamsSearch {
   constructor() {
@@ -12,7 +12,6 @@ class SpencerAndWilliamsSearch {
 
   _initSearch() {
     this.unifiedSearch = new UnifiedSearch();
-    
   }
 }
 
