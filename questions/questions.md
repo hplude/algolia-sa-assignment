@@ -36,7 +36,7 @@ Sorry to give you the kind of feedback that I know you do not want to hear, but 
 
 Regards, Matt
 
-###Answer 2
+### Answer 2
 
 Hi Matt,
 
@@ -55,7 +55,7 @@ I'm looking to integrate Algolia in my website. Will this be a lot of developmen
 
 Regards, Leo
 
-###Answer 3
+### Answer 3
 
 Hi Leo, thanks for reaching out. 
 
