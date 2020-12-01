@@ -1,4 +1,4 @@
-const autocompleteSuggestionHit = (hit) => {
+const autocompleteSuggestionHit = hit => {
 	const [category] = hit.instant_search.facets.exact_matches.categories;
 
 	return `
@@ -6,6 +6,6 @@ const autocompleteSuggestionHit = (hit) => {
 	    ${hit.query} in <i>${category.value}</i>
 	  </div>
   `;
-}
+};
 
 export default autocompleteSuggestionHit;

@@ -2,12 +2,11 @@ import algoliasearch from 'algoliasearch';
 import instantsearch from 'instantsearch.js';
 
 // Instant Search Widgets
-import { 
-  hits, 
-  searchBox, 
-  configure, 
-  index, 
-  refinementList, 
+import {
+  hits,
+  configure,
+  index,
+  refinementList,
   clearRefinements,
   pagination,
   numericMenu,
@@ -25,15 +24,14 @@ import resultHit from '../templates/result-hit';
  */
 class Unifiedsearch {
 
-/**
- * @constructor
- */
+  /**
+  * @constructor
+  */
   constructor() {
     this._registerClient();
     this._registerWidgets();
     this._startSearch();
   }
-
 
   /**
    * @private
@@ -57,15 +55,14 @@ class Unifiedsearch {
     });
   }
 
-
   /**
    * @private
    * Adds widgets to the Algolia instant search instance
    * @return {void}
    */
-  _registerWidgets() { 
+  _registerWidgets() {
     this.suggestionSearch.addWidgets([
-      index({ 
+      index({
         indexName: 'instant_search',
       }),
       configure({
@@ -105,11 +102,11 @@ class Unifiedsearch {
       hits({
         container: '#product-hits',
         templates: {
-          item: resultHit
+          item: resultHit,
         },
       }),
       clearRefinements({
-        container: '#clear-refinements'
+        container: '#clear-refinements',
       }),
       refinementList({
         container: '#brand-facet',
@@ -135,7 +132,7 @@ class Unifiedsearch {
       ratingMenu({
         container: '#rating-menu',
         attribute: 'rating',
-      })
+      }),
     ]);
   }
 
