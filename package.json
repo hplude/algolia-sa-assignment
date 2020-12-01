@@ -5,7 +5,7 @@
   "scripts": {
     "start": "parcel index.html --port 4000",
     "dev": "parcel <your entry file>",
-    "build": "parcel build index.html",
+    "build": "parcel build index.html --out-dir docs",
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix"
   },
