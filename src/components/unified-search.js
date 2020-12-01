@@ -43,7 +43,7 @@ class Unifiedsearch {
   _registerClient() {
     this.searchClient = algoliasearch(
       'K21NPA2TCC',
-      '61bfaa4a2516729f32ebb3addb53b48c'
+      '61bfaa4a2516729f32ebb3addb53b48c' // would normally use API keys here
     );
 
     this.suggestionSearch = instantsearch({

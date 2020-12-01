@@ -1,5 +1,6 @@
 import UnifiedSearch from './components/unified-search';
 
+// environment variable setup for development
 // if (process.env.NODE_ENV !== 'production') {
 //   console.log('Using dotenv to set environment variables.')
 //   require('dotenv').config()

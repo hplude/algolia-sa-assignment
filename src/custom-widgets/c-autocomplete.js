@@ -3,10 +3,13 @@ import { connectAutocomplete, connectRefinementList } from 'instantsearch.js/es/
 import ACsuggestionTemplate from '../templates/ac-suggestion-hit'
 import ACproductTemplate from '../templates/ac-product-hit'
 
+// this widget doesn't actually get rendered
 const virtualRefinementList = connectRefinementList(
   () => null
 );
 
+// custom autocomplete that renders both product hits and query suggestion hits in 
+// the autocomplete dropdown
 const autoComplete = connectAutocomplete(
   ({ indices, refine, widgetParams }, isFirstRendering) => {
     const { initialIndices, container, onSelectChange } = widgetParams;
