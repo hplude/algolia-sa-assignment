@@ -36725,8 +36725,7 @@ function () {
   _createClass(Unifiedsearch, [{
     key: "_registerClient",
     value: function _registerClient() {
-      this.searchClient = (0, _algoliasearch.default)('K21NPA2TCC', '61bfaa4a2516729f32ebb3addb53b48c' // would normally use environment variable for this
-      );
+      this.searchClient = (0, _algoliasearch.default)('K21NPA2TCC', '61bfaa4a2516729f32ebb3addb53b48c');
       this.suggestionSearch = (0, _instantsearch.default)({
         indexName: 'instant_search_query_suggestions',
         searchClient: this.searchClient
@@ -36898,7 +36897,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61657" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56686" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
